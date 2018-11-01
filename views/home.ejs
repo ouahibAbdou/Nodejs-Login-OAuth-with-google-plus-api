@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.1/css/uikit.min.css" />
+    <title>Welcome Libbooks</title>
+</head>
+<body class="uk-container">
+    <p style="margin: 20px 0 20px 0">
+        <a href="/" class="uk-button uk-button-primary">Home</a>
+        <% if(user) { %>
+            <a href="/profile" class="uk-button uk-button-default">Profile</a>
+            <a href="/auth/logout" class="uk-button uk-button-default">Logout</a>
+        <% }else{ %>
+            <a href="/auth/login" class="uk-button uk-button-default">Login</a>
+        <% } %>
+    </p>
+    <h1>Welcome Libbooks</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae minima dicta facere, doloribus iure repellendus autem veniam dolores architecto? Odio pariatur ab, recusandae nesciunt dicta soluta sunt facilis tempore.</p>
+</body>
+</html>

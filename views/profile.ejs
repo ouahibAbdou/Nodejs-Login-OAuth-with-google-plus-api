@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.1/css/uikit.min.css" />
+    <title>Welcome to Libbooks</title>
+</head>
+<body class="uk-container">
+    <p style="margin: 20px 0 20px 0">
+        <a href="/" class="uk-button uk-button-default">Home</a>
+        <a href="/profile" class="uk-button uk-button-primary">Profile</a>
+        <a href="/auth/logout" class="uk-button uk-button-default">Logout</a>
+    </p>
+    <h1>Welcome to Libbooks</h1>
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <img src="<%= user.picture %>" style="border-radius: 50%">
+        <h3 class="uk-card-title">Welcome Mister <%= user.username %></h3>
+        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</body>
+</html>
